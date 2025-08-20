@@ -7,5 +7,5 @@
 	echo("Operadores de multiplicação <br/>");
 	echo("Operadores de divisão <br/>");
 
-	echo("Insira a operação desejada: <br/>");
+	echo("Insira a operação desejada:  <br/>");
  ?>
