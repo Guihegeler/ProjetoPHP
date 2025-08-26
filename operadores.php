@@ -24,4 +24,5 @@
 	echo("A multiplicação de $num1 e $num2 é: $resp2 <br/>");
 	echo("A divisão de $num1 e $num2 é: $resp3 <br/>");
  	echo("O resto da divisão de $num1 e $num2 é: $resp4 <br/>");
+ 
  ?>
