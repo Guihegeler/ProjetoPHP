@@ -40,6 +40,7 @@
 	}
 	*/
 
+	/*
 	$num = array (1, 2, 3, 4, 5);
 
 	foreach($num as $valor){
@@ -55,7 +56,55 @@
 	foreach($num as $valor){
 		echo "Valor é $valor <br/>";
 	} 
+	*/
 
+	/*
+	$nome1 = "Debs";
+	$nome2 = "Guilherme";
+	$nome3 = "Sabrina";
+	$nome4 = "Guanabara";
+	$nome5 = "Vagabunda";
+
+	echo("$nome1<br/>$nome2<br/>$nome3<br/>$nome4<br/>$nome5<br/><br/>");
+
+	$nomee = array("Debs","Guilherme","Sabrina","Guanabara","Vagabunda");
+
+	echo "Os nomes no array: <br/>";
+
+	foreach ($nomee as $nomes){
+		echo "<br/>".$nomes;
+	}
+	*/
+
+	/*
+	echo("<br/>");
+
+	$nome["MA"] = "Maria";
+	$nome["PE"] = "Pedro";
+	$nome["JO"] = "João";
+
+	echo("<pre>");
+	var_dump($nome);
+	echo("</pre>");
+
+	echo("<pres>");
+	print_r($nome);
+	echo("</pre>");
+	*/
+
+	$salarios = array("João" => 2000, "Pedro" => 1000, "Maria" => 500); 
+
+	echo "Salário de João é " . $salarios['João'] . "<br/>";
+	echo "Salário de Pedro é " . $salarios['Pedro'] . "<br/>";
+	echo "Salário de Maria é " . $salarios['Maria'] . "<br/><br/>";
+
+	$salarios['João'] = "Alto"; 
+	$salarios['Pedro'] = "Médio"; 
+	$salarios['Maria'] = "Baixo";
+
+	echo "Salário de João é " . $salarios['João'] . "<br/>";
+	echo "Salário de Pedro é " . $salarios['Pedro'] . "<br/>";
+	echo "Salário de Maria é " . $salarios['Maria'] . "<br/>";
 
 
 
