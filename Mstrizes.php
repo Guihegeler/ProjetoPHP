@@ -61,7 +61,7 @@ for ($i = 0; $i < 3; $i++) {
 	echo "</pre>";
 */
 
-
+/*
 	$alunos = [
 
 		["nome" => "debs", "nota" => 10.0],
@@ -94,6 +94,75 @@ $media = $somaNotas / count($alunos);
  
 echo "Média da classe: $media <br>";
 echo "Aluno com maior nota: $melhorAluno ($maiorNota)<br>";
+*/
+
+
+/*
+	$meses = [
+    1 => "Janeiro",
+    2 => "Fevereiro",
+    3 => "Março",
+    4 => "Abril",
+    5 => "Maio",
+    6 => "Junho",
+    7 => "Julho",
+    8 => "Agosto",
+    9 => "Setembro",
+    10 => "Outubro",
+    11 => "Novembro",
+    12 => "Dezembro"
+];
+ 
+$numero = 9; 
+echo "Mês correspondente: " . $meses[$numero];
+*/
+
+$pessoas = [
+    ["nome" => "Ana", "cidade" => "Santos", "idade" => 20, "sexo" => "F"],
+    ["nome" => "Bruno", "cidade" => "São Paulo", "idade" => 17, "sexo" => "M"],
+    ["nome" => "Carlos", "cidade" => "Santos", "idade" => 25, "sexo" => "M"],
+    ["nome" => "Daniela", "cidade" => "Rio de Janeiro", "idade" => 30, "sexo" => "F"],
+    ["nome" => "Eduardo", "cidade" => "Santos", "idade" => 19, "sexo" => "M"],
+    ["nome" => "Fernanda", "cidade" => "São Paulo", "idade" => 16, "sexo" => "F"],
+    ["nome" => "Gabriel", "cidade" => "Santos", "idade" => 22, "sexo" => "M"],
+    ["nome" => "Helena", "cidade" => "Curitiba", "idade" => 27, "sexo" => "F"],
+    ["nome" => "Igor", "cidade" => "Santos", "idade" => 18, "sexo" => "M"],
+    ["nome" => "Juliana", "cidade" => "São Paulo", "idade" => 21, "sexo" => "F"]
+];
+ 
+echo "Lista de nomes e idades:<br>";
+foreach ($pessoas as $p) {
+    echo $p["nome"] . " - " . $p["idade"] . " anos<br>";
+}
+ 
+echo "<br>";
+ 
+echo "Moradores de Santos:<br>";
+foreach ($pessoas as $p) {
+    if ($p["cidade"] == "Santos") {
+        echo $p["nome"] . "<br>";
+    }
+}
+ 
+echo "<br>";
+ 
+// 3. Quem tem mais de 18 anos
+echo "Maiores de 18 anos:<br>";
+foreach ($pessoas as $p) {
+    if ($p["idade"] > 18) {
+        echo $p["nome"] . "<br>";
+    }
+}
+ 
+echo "<br>";
+ 
+$contaHomens = 0;
+foreach ($pessoas as $p) {
+    if ($p["sexo"] == "M") {
+        $contaHomens++;
+    }
+}
+echo "Total de homens cadastrados: $contaHomens<br>";
 
 
  ?>
